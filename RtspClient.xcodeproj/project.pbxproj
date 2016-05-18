@@ -14,6 +14,19 @@
 		415C63A51CECC824005F81E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415C63A31CECC824005F81E4 /* LaunchScreen.storyboard */; };
 		415C63B01CECC824005F81E4 /* RtspClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C63AF1CECC824005F81E4 /* RtspClientTests.swift */; };
 		415C63BB1CECC824005F81E4 /* RtspClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C63BA1CECC824005F81E4 /* RtspClientUITests.swift */; };
+		415C63DC1CECCD69005F81E4 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C63D71CECCD69005F81E4 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		415C63DD1CECCD69005F81E4 /* RTSPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C63D91CECCD69005F81E4 /* RTSPPlayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		415C63DE1CECCD69005F81E4 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C63DB1CECCD69005F81E4 /* Utilities.m */; };
+		415C63E01CECCFF3005F81E4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63DF1CECCFF3005F81E4 /* libz.tbd */; };
+		415C63E21CECCFFA005F81E4 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E11CECCFFA005F81E4 /* libiconv.tbd */; };
+		415C63E41CECD001005F81E4 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E31CECD001005F81E4 /* libbz2.tbd */; };
+		415C63EC1CECD063005F81E4 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E51CECD063005F81E4 /* libavcodec.a */; };
+		415C63ED1CECD063005F81E4 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E61CECD063005F81E4 /* libavdevice.a */; };
+		415C63EE1CECD063005F81E4 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E71CECD063005F81E4 /* libavfilter.a */; };
+		415C63EF1CECD063005F81E4 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E81CECD063005F81E4 /* libavformat.a */; };
+		415C63F01CECD063005F81E4 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E91CECD063005F81E4 /* libavutil.a */; };
+		415C63F11CECD063005F81E4 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63EA1CECD063005F81E4 /* libswresample.a */; };
+		415C63F21CECD063005F81E4 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63EB1CECD063005F81E4 /* libswscale.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +60,23 @@
 		415C63B61CECC824005F81E4 /* RtspClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RtspClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		415C63BA1CECC824005F81E4 /* RtspClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtspClientUITests.swift; sourceTree = "<group>"; };
 		415C63BC1CECC824005F81E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415C63D51CECCD69005F81E4 /* RtspClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RtspClient-Bridging-Header.h"; sourceTree = "<group>"; };
+		415C63D61CECCD69005F81E4 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = FFMpegDecoder/AudioStreamer.h; sourceTree = SOURCE_ROOT; };
+		415C63D71CECCD69005F81E4 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = FFMpegDecoder/AudioStreamer.m; sourceTree = SOURCE_ROOT; };
+		415C63D81CECCD69005F81E4 /* RTSPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTSPPlayer.h; path = FFMpegDecoder/RTSPPlayer.h; sourceTree = SOURCE_ROOT; };
+		415C63D91CECCD69005F81E4 /* RTSPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTSPPlayer.m; path = FFMpegDecoder/RTSPPlayer.m; sourceTree = SOURCE_ROOT; };
+		415C63DA1CECCD69005F81E4 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = FFMpegDecoder/Utilities.h; sourceTree = SOURCE_ROOT; };
+		415C63DB1CECCD69005F81E4 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = FFMpegDecoder/Utilities.m; sourceTree = SOURCE_ROOT; };
+		415C63DF1CECCFF3005F81E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		415C63E11CECCFFA005F81E4 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		415C63E31CECD001005F81E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		415C63E51CECD063005F81E4 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = FFMpegiOS/lib/libavcodec.a; sourceTree = "<group>"; };
+		415C63E61CECD063005F81E4 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = FFMpegiOS/lib/libavdevice.a; sourceTree = "<group>"; };
+		415C63E71CECD063005F81E4 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = FFMpegiOS/lib/libavfilter.a; sourceTree = "<group>"; };
+		415C63E81CECD063005F81E4 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = FFMpegiOS/lib/libavformat.a; sourceTree = "<group>"; };
+		415C63E91CECD063005F81E4 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = FFMpegiOS/lib/libavutil.a; sourceTree = "<group>"; };
+		415C63EA1CECD063005F81E4 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = FFMpegiOS/lib/libswresample.a; sourceTree = "<group>"; };
+		415C63EB1CECD063005F81E4 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = FFMpegiOS/lib/libswscale.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415C63EC1CECD063005F81E4 /* libavcodec.a in Frameworks */,
+				415C63ED1CECD063005F81E4 /* libavdevice.a in Frameworks */,
+				415C63EE1CECD063005F81E4 /* libavfilter.a in Frameworks */,
+				415C63EF1CECD063005F81E4 /* libavformat.a in Frameworks */,
+				415C63F01CECD063005F81E4 /* libavutil.a in Frameworks */,
+				415C63F11CECD063005F81E4 /* libswresample.a in Frameworks */,
+				415C63F21CECD063005F81E4 /* libswscale.a in Frameworks */,
+				415C63E41CECD001005F81E4 /* libbz2.tbd in Frameworks */,
+				415C63E21CECCFFA005F81E4 /* libiconv.tbd in Frameworks */,
+				415C63E01CECCFF3005F81E4 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +117,16 @@
 		415C638E1CECC824005F81E4 = {
 			isa = PBXGroup;
 			children = (
+				415C63E51CECD063005F81E4 /* libavcodec.a */,
+				415C63E61CECD063005F81E4 /* libavdevice.a */,
+				415C63E71CECD063005F81E4 /* libavfilter.a */,
+				415C63E81CECD063005F81E4 /* libavformat.a */,
+				415C63E91CECD063005F81E4 /* libavutil.a */,
+				415C63EA1CECD063005F81E4 /* libswresample.a */,
+				415C63EB1CECD063005F81E4 /* libswscale.a */,
+				415C63E31CECD001005F81E4 /* libbz2.tbd */,
+				415C63E11CECCFFA005F81E4 /* libiconv.tbd */,
+				415C63DF1CECCFF3005F81E4 /* libz.tbd */,
 				415C63991CECC824005F81E4 /* RtspClient */,
 				415C63AE1CECC824005F81E4 /* RtspClientTests */,
 				415C63B91CECC824005F81E4 /* RtspClientUITests */,
@@ -97,12 +147,19 @@
 		415C63991CECC824005F81E4 /* RtspClient */ = {
 			isa = PBXGroup;
 			children = (
+				415C63D61CECCD69005F81E4 /* AudioStreamer.h */,
+				415C63D71CECCD69005F81E4 /* AudioStreamer.m */,
+				415C63D81CECCD69005F81E4 /* RTSPPlayer.h */,
+				415C63D91CECCD69005F81E4 /* RTSPPlayer.m */,
+				415C63DA1CECCD69005F81E4 /* Utilities.h */,
+				415C63DB1CECCD69005F81E4 /* Utilities.m */,
 				415C639A1CECC824005F81E4 /* AppDelegate.swift */,
 				415C639C1CECC824005F81E4 /* ViewController.swift */,
 				415C639E1CECC824005F81E4 /* Main.storyboard */,
 				415C63A11CECC824005F81E4 /* Assets.xcassets */,
 				415C63A31CECC824005F81E4 /* LaunchScreen.storyboard */,
 				415C63A61CECC824005F81E4 /* Info.plist */,
+				415C63D51CECCD69005F81E4 /* RtspClient-Bridging-Header.h */,
 			);
 			path = RtspClient;
 			sourceTree = "<group>";
@@ -257,7 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				415C639D1CECC824005F81E4 /* ViewController.swift in Sources */,
+				415C63DD1CECCD69005F81E4 /* RTSPPlayer.m in Sources */,
 				415C639B1CECC824005F81E4 /* AppDelegate.swift in Sources */,
+				415C63DC1CECCD69005F81E4 /* AudioStreamer.m in Sources */,
+				415C63DE1CECCD69005F81E4 /* Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +459,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFMpegiOS/include/**";
 				INFOPLIST_FILE = RtspClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFMpegiOS/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RtspClient/RtspClient-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +478,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFMpegiOS/include/**";
 				INFOPLIST_FILE = RtspClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFMpegiOS/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RtspClient/RtspClient-Bridging-Header.h";
 			};
 			name = Release;
 		};
